@@ -5,9 +5,11 @@ Debian 11 open sources to refresh Desktop PC
 
 **Enter to the mesa<version> folder and:**
 
-`meson configure`
-`meson builddir/ --prefix="/projects/installers/" --pkg-config-path=/projects/installers/lib/x86_64-linux-gnu/pkgconfig,/projects/installers/share/pkgconfig -Degl=enabled -Degl-native-platform=wayland -Dgallium-nine=true -Dgallium-opencl=icd -Dgallium-va=true -Dgallium-vdpau=true -Dglx=dri`
-`ninja -C builddir/ install`
+```
+meson configure
+meson builddir/ --prefix="/projects/installers/" --pkg-config-path=/projects/installers/lib/x86_64-linux-gnu/pkgconfig,/projects/installers/share/pkgconfig -Degl=enabled -Degl-native-platform=wayland -Dgallium-nine=true -Dgallium-opencl=icd -Dgallium-va=true -Dgallium-vdpau=true -Dglx=dri
+ninja -C builddir/ install
+```
 
 **Afterwards in gnome terminal export all neccessary variables:**
 
