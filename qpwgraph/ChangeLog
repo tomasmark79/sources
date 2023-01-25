@@ -1,0 +1,147 @@
+qpwgraph - A PipeWire Graph Qt GUI Interface
+--------------------------------------------
+
+
+GIT HEAD
+
+- Bumping copyright headers to the brand new year.
+
+
+0.3.9  2022-12-27  An end-of-year'22 release
+
+- Whether to draw connectors through or around nodes is now an
+  user preference option (cf. View > Connect Through Nodes).
+
+
+0.3.8  2022-11-19  A mid-autumn'22 release.
+
+- Allow middle mouse button for grabbing and dragging the canvas.
+
+
+0.3.7  2022-10-22  An autumn'22 release.
+
+- Fixed the system-tray icon tooltip to always reflect current
+  main window title, usually the current patchbay name.
+- Make up visual immediate feedback connectlons.
+
+
+0.3.6  2022-09-24  An early-autumn'22 release.
+
+- View / Repel Overlapping Nodes option added.
+
+
+0.3.5  2022-08-20  A thirteenth beta release.
+
+- Patchbay/Scan menu command removed as redundand.
+- Added Patchbay/Auto Pin connections option (issue #56).
+- Add current system user-name to the singleton/unique application
+  instance identifier.
+
+
+0.3.4  2022-07-08  A twelfth beta release.
+
+- Fixed repainting of pinned/unpinned connections when switching
+  patchbay profiles and Patchbay/Edit mode is on.
+
+
+0.3.3  2022-07-06  An eleventh beta release.
+
+- Patchbay/Edit mode introduced: pinning and unpinning connections
+  to and from current patchbay is now implemented.
+- Original Graph/Connect and Disconnect keyboard shortcuts, [Ins]
+  and [Del], are now added to the existing ones, respectively.
+
+
+0.3.2  2022-06-13  A tenth beta release.
+
+- Fixed initial nodes layout positioning, now back to the former
+  spiraled away from the center.
+
+
+0.3.1  2022-05-29  A ninth beta release.
+
+- Only ask to quit an activated patchbay when actually quitting
+  the application (not just closing a patchbay).
+- Graph/Connect and Disconnect keyboard shortcuts changed from
+  [Ins] and [Del], to [Ctrl+C] and [Ctrl+D] respectively; also
+  added [F2] as brand new keyboard shortcut for Edit/Rename...
+
+
+0.3.0  2022-05-21  An eighth beta release.
+
+- Fixed document dirtiness (modified state) when making connections
+  and/or disconnections on a clear and new patchbay.
+- Attempt to save and possibly restore different node positions and
+  aliases when former original node name is non-unique.
+
+
+0.2.6  2022-04-23  A seventh beta release.
+
+- Patchbay now treats multiple nodes and respective ports with
+  the same name as one, applying the same rule.
+
+
+0.2.5  2022-04-06  A sixth beta release.
+
+- Prevent an graph refresh or update as much as possible while in
+  some canvas editing business (fixes issue #29).
+- Possibly fix a random segfault when rendering connection lines
+  ahead of time (possibly mitigating issue #26).
+
+
+0.2.4  2022-03-19  A fifth beta release.
+
+- Whether to enable the system-tray icon option has been added to
+  main menu (cf. Help > System Tray Icon).
+- Allow the Patchbay toolbar to also have a vertical orientation,
+  on the left and right areas of the main window.
+- Added a barebones man page to install procedure.
+- Added missing file code to desktop exec entry.
+
+
+0.2.3  2022-03-12  A fourth beta release.
+
+- Added start minimized (-m, --minimized) command line option.
+- Main application icon is now presented in scalable format (SVG).
+
+
+0.2.2  2022-03-02  A thrice beta than before.
+
+- Application ID changed from org.freedesktop.rncbc.qpwgraph to
+  org.rncbc.qpwgraph (affecting appdata/metainfo and mime/types).
+- Fixed system-tray to show the main window up when minimized.
+
+
+0.2.1  2022-02-26  Just a second beta.
+
+- Patchbay feature introduced: save connections to file; restore
+  connections from file and maintain when activated; disconnect
+  all others when activated in exclusive mode.
+- Migrated command line parsing to QCommandLineParser/Option
+  (Qt >= 5.2).
+
+
+0.2.0  2022-01-16  Enter first beta.
+
+- Retry/recover from PipeWire service errors/outages automatically.
+- Nodes and port renames (titles aka aliases) are now persistent.
+- Corrected appdata file suffix to .metainfo.xml
+
+
+0.1.3  2022-01-13  A Winter'22 Release.
+
+- Updated and renamed appdata and desktop files.
+
+
+0.1.2  2021-12-31  One third alpha.
+
+- ALSA MIDI (Sequencer) support is now opted in by default.
+
+
+0.1.1  2021-12-18  One second alpha.
+
+- Added libpipewire (and headers) version information to about box.
+- Added icons, desktop and appstream data to installation.
+
+
+0.1.0  2021-12-06  One first alpha.
